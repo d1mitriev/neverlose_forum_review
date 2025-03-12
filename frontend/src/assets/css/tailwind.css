@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Дополнительные кастомные стили */
+@layer components {
+  .btn {
+    @apply inline-block px-6 py-2.5 font-medium text-xs leading-tight rounded shadow-md transition duration-150 ease-in-out;
+  }
+  
+  .btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700 focus:bg-blue-700 active:bg-blue-800;
+  }
+  
+  .btn-secondary {
+    @apply bg-slate-800 text-white hover:bg-slate-900 focus:bg-slate-900 active:bg-black;
+  }
+  
+  .form-input {
+    @apply block w-full px-3 py-2 text-base font-normal text-gray-700 dark:text-gray-200 bg-white dark:bg-slate-800 bg-clip-padding border border-solid border-gray-300 dark:border-slate-700 rounded-md transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none;
+  }
+  
+  .card {
+    @apply p-6 rounded-lg shadow-md bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700;
+  }
+} 
